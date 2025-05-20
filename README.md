@@ -5,6 +5,7 @@
 The main objective of this project is to analyze [dataset/topic, e.g., "sales data for a retail company"] using SQL in order to extract meaningful insights that can help in decision-making. The project demonstrates how SQL queries can be used to solve real-world problems by performing data cleaning, transformation, and analysis.
 
 🛠️ Tools Used
+
 SQL (Structured Query Language) – Core language for querying and analyzing data
 
 MySQL / PostgreSQL / SQLite – [Choose based on what you used]
@@ -30,6 +31,7 @@ Results Compilation – Summarized query results into meaningful formats
 
 Documentation – Compiled analysis and key insights for sharing and interpretation
 
+
 📈 Analysis Included
 Total and average metrics (e.g., sales, customers, revenue)
 
@@ -50,6 +52,9 @@ Insight 3: [E.g., "Customers from Region X have the highest average purchase val
 
 Insight 4: [E.g., "Inventory turnover rate is low for Category Y"]
 
+
 🧾 Conclusion
-This SQL project provided valuable insights into [domain, e.g., "business performance"] using raw data. SQL proved effective in transforming complex datasets into actionable insights. The project enhances understanding of relational database concepts and highlights the importance of clean and structured data in analysis.
+This SQL project provided valuable insights into [domain, e.g., "business performance"] using raw data. 
+SQL proved effective in transforming complex datasets into actionable insights. The project enhances understanding of 
+relational database concepts and highlights the importance of clean and structured data in analysis.
 
