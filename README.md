@@ -17,6 +17,7 @@ Microsoft Excel / Google Sheets – (if any pre-processing or visualization was 
 GitHub – Version control and project hosting
 
 🔧 Steps Included
+
 Data Import – Loaded raw data into the SQL environment
 
 Schema Design – Created tables and relationships if not pre-existing
@@ -33,6 +34,7 @@ Documentation – Compiled analysis and key insights for sharing and interpretat
 
 
 📈 Analysis Included
+
 Total and average metrics (e.g., sales, customers, revenue)
 
 Time-based trends (e.g., monthly/yearly patterns)
@@ -44,6 +46,7 @@ Regional or demographic breakdown (if applicable)
 Any anomalies or inconsistencies detected
 
 🔍 Key Insights
+
 Insight 1: [E.g., "Product A contributed 35% of total revenue in Q2"]
 
 Insight 2: [E.g., "Sales drop significantly on weekends"]
@@ -54,6 +57,7 @@ Insight 4: [E.g., "Inventory turnover rate is low for Category Y"]
 
 
 🧾 Conclusion
+
 This SQL project provided valuable insights into [domain, e.g., "business performance"] using raw data. 
 SQL proved effective in transforming complex datasets into actionable insights. The project enhances understanding of 
 relational database concepts and highlights the importance of clean and structured data in analysis.
