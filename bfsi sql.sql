@@ -15,10 +15,9 @@ STR_TO_DATE(Order_date, '%d-%m-%Y') > '2020-01-01'
  
 
  #Dispaly Totalprofit in descending order with limit of 10
- select * ,
- (Unit_Profit*Sold_Quantity) as "TotalProfit"
+ select * 
  from sales
- order by TotalProfit desc 
+ order by unit_profit desc 
  limit 10;
 
 #Dispaly customer names whose names Starts with J and ends with n
@@ -28,12 +27,8 @@ where customer_name like 'J%n'
 
 #Display the product_name that has 'Acco' in it 
 select customer_name,product_name from sales
-Where product_name like '%Acco%';
+where product_name like '%Acco%';
 
-
-/*SELECT customer_name,product_name FROM sales
-Where product_name like '%Acco%';
-*/
 
 #Display the 5 highest total_amount,cities 
 select city,sum(total_amount) as 'Total_amount' from sales
@@ -41,7 +36,7 @@ order by total_amount desc
 limit 5;
 
 #Display total revenue,total sales ad average unit cost
-select sum(total_amount),sum(sold_quantity),avg(unit_cost) as 'Average_unitcost' 
+select sum(total_amount),count(order_id),avg(unit_cost) as 'Average_unitcost' 
 from sales
 
 #Display product name and total_sales
