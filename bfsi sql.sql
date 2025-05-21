@@ -27,17 +27,16 @@ where customer_name like 'J%n'
 
 
 #Display the product_name that has 'Acco' in it 
-select * from sales
-where  product_name
-having 'Acco';
+select customer_name,product_name from sales
+Where product_name like '%Acco%';
 
 
 /*SELECT customer_name,product_name FROM sales
-Where product_name like 'Acco';
+Where product_name like '%Acco%';
 */
 
 #Display the 5 highest total_amount,cities 
-select city,total_amount from sales
+select city,sum(total_amount) as 'Total_amount' from sales
 order by total_amount desc
 limit 5;
 
@@ -55,12 +54,8 @@ select customer_name,total_amount from sales
 where total_amount>50000
 
 #Display the total_revenue using Dense rank with limit of 5.
-SELECT customer_name, total_amount AS sales_revenue
-FROM (
-  SELECT 
-    customer_name,
-    total_amount,
-    DENSE_RANK() OVER (ORDER BY total_amount DESC) AS dr
-  FROM sales
-) AS ranked_sales
-WHERE dr <= 5;
+select customer_name,sum(total_amount) as 'sales_revenue',  
+dense_rank() over (order by sum(total_amount) desc) 
+from sales 
+group by customer_name
+LIMIT 5;
